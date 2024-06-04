@@ -1,0 +1,14 @@
+type Query {
+  info: String!
+  allPokemons: [Pokemon!]!
+}
+
+type Mutation {
+  addPokemon(name: String!, age: Int!): Pokemon!
+}
+
+type Pokemon {
+  id: ID!
+  name: String!
+  age: Int!
+}

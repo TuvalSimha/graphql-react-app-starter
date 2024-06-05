@@ -1,5 +1,8 @@
 # GraphQL React App Starter
 
+## Video Demo
+https://github.com/TuvalSimha/graphql-react-app-starter/assets/37614975/1b90da5d-d4e8-445f-a05f-09750e113e90
+
 ## Overview
 
 This project is a starter template for building a GraphQL application with a React frontend. It uses GraphQL Yoga for the backend server, GraphQL Codegen for generating types and resolvers, and Vite for the frontend development environment. The client-side GraphQL operations are handled using URQL, and all operations are strongly typed thanks to GraphQL Codegen.

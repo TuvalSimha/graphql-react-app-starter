@@ -1,0 +1,34 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "workdir",
+      "description": "Run empty",
+      "open": true,
+      "cwd": "./",
+      "command": ""
+    },
+    {
+      "name": "codegen --watch",
+      "description": "Run GraphQL codegen",
+      "open": true,
+      "cwd": "./",
+      "command": "pnpm codegen --watch"
+    },
+    {
+      "name": "backend:dev",
+      "description": "Run server",
+      "focus": true,
+      "open": true,
+      "cwd": "backend",
+      "command": "pnpm dev"
+    },
+    {
+      "name": "client:dev",
+      "description": "Run application",
+      "open": true,
+      "cwd": "client",
+      "command": "pnpm dev"
+    }
+  ]
+}

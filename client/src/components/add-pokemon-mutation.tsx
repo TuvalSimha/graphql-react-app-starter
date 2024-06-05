@@ -37,33 +37,35 @@ export function AddPokemonForm() {
     }
 
     return (
-        <div style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "10px",
-        }}>
+        <div>
             <h3>Add Pokemon Mutation</h3>
-            <label htmlFor="name">Name</label>
-            <input
-                type="text"
-                placeholder="Name"
-                required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-            />
-            <label htmlFor="age">Age</label>
-            <input
-                type="number"
-                placeholder="Age"
-                required
-                value={age}
-                onChange={(e) => setAge(parseInt(e.target.value))}
-            />
             {errorMessages.map((message) => (
-                <h4 key={message} style={{ color: "red" }}>{message}</h4>
+                <h4 key={message} style={{ color: "red", fontSize: "12px" }}>{message}</h4>
             ))}
-            <button onClick={handleAddPokemon}>Add Pokemon</button>
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "4px",
+            }}>
+                <label htmlFor="name">Name</label>
+                <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <label htmlFor="age">Age</label>
+                <input
+                    type="number"
+                    placeholder="Age"
+                    required
+                    value={age}
+                    onChange={(e) => setAge(parseInt(e.target.value))}
+                />
+                <button onClick={handleAddPokemon}>Add Pokemon</button>
+            </div>
         </div>
     );
 }

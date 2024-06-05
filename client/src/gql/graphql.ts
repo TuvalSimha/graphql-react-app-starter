@@ -40,10 +40,19 @@ export type Query = {
   info: Scalars['String']['output'];
 };
 
+export type AddOnePokemonMutationMutationVariables = Exact<{
+  name: Scalars['String']['input'];
+  age: Scalars['Int']['input'];
+}>;
+
+
+export type AddOnePokemonMutationMutation = { __typename?: 'Mutation', addPokemon: { __typename?: 'Pokemon', id: string, name: string, age: number } };
+
 export type AllPokemonsListQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type AllPokemonsListQuery = { __typename?: 'Query', allPokemons: Array<{ __typename?: 'Pokemon', id: string, name: string, age: number }> };
 
 
+export const AddOnePokemonMutationDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"AddOnePokemonMutation"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"name"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}}},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"age"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Int"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"addPokemon"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"name"},"value":{"kind":"Variable","name":{"kind":"Name","value":"name"}}},{"kind":"Argument","name":{"kind":"Name","value":"age"},"value":{"kind":"Variable","name":{"kind":"Name","value":"age"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"age"}}]}}]}}]} as unknown as DocumentNode<AddOnePokemonMutationMutation, AddOnePokemonMutationMutationVariables>;
 export const AllPokemonsListDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"AllPokemonsList"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"allPokemons"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"age"}}]}}]}}]} as unknown as DocumentNode<AllPokemonsListQuery, AllPokemonsListQueryVariables>;

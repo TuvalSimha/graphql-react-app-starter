@@ -20,7 +20,7 @@ export const resolvers: Resolvers = {
     },
     Mutation: {
         addPokemon: (_parent: unknown, args: { name: string, age: number }): Pokemon => {
-            let idCount = pokemons.length
+            let idCount = pokemons.length + 1
 
             const pokemon: Pokemon = {
                 id: `${idCount++}`,

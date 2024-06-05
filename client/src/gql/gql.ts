@@ -13,6 +13,7 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Therefore it is highly recommended to use the babel or swc plugin for production.
  */
 const documents = {
+    "\n    mutation AddOnePokemonMutation($name: String!, $age: Int!) {\n        addPokemon(name: $name, age: $age) {\n        id\n        name\n        age\n    }\n}\n": types.AddOnePokemonMutationDocument,
     "\n  query AllPokemonsList{\n  allPokemons {\n    id\n    name\n    age\n  }\n}\n": types.AllPokemonsListDocument,
 };
 
@@ -30,6 +31,10 @@ const documents = {
  */
 export function graphql(source: string): unknown;
 
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "\n    mutation AddOnePokemonMutation($name: String!, $age: Int!) {\n        addPokemon(name: $name, age: $age) {\n        id\n        name\n        age\n    }\n}\n"): (typeof documents)["\n    mutation AddOnePokemonMutation($name: String!, $age: Int!) {\n        addPokemon(name: $name, age: $age) {\n        id\n        name\n        age\n    }\n}\n"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */

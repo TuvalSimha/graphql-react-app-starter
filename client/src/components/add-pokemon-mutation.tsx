@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
-import { graphql } from "../gql/gql";
+import { graphql } from "../__generated__/gql";
 import { useMutation } from "urql";
 
 

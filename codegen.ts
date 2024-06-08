@@ -5,7 +5,7 @@ const config: CodegenConfig = {
   documents: "./client/src/**/*.tsx",
   ignoreNoDocuments: true,
   generates: {
-    "./client/src/gql/": {
+    "./client/src/__generated__/": {
       preset: "client",
     },
     "./backend/src/__generated__/types-resolver.ts": {

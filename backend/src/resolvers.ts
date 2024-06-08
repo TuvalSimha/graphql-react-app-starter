@@ -1,6 +1,7 @@
 import { Pokemon, Resolvers } from "./__generated__/types-resolver"
 import { pokemons } from "./mock-data"
 
+
 export const resolvers: Resolvers = {
     Query: {
         info: () => 'This is the API of a Pokemon database',
@@ -13,10 +14,8 @@ export const resolvers: Resolvers = {
     },
     Mutation: {
         addPokemon(_parent, args) {
-            let idCount = pokemons.length + 1
-
             const pokemon: Pokemon = {
-                id: `${idCount++}`,
+                id: `${pokemons.length}`,
                 name: args.name,
                 age: args.age
             }

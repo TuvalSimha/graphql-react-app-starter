@@ -5,6 +5,7 @@
 ```
 npx create-graphql-react-app my-app
 cd my-app
+pnpm install
 ```
 
 ## Video Demo

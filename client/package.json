@@ -1,8 +1,15 @@
 {
   "name": "client",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": {
+    "name": "Tuval Simha",
+    "email": "tuval.simha@gmail.com"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "description": "A React client for a GraphQL server",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,22 +17,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "graphql": "^16.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "urql": "^4.1.0"
+    "graphql": "16.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "urql": "4.1.0"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^5.0.2",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.0"
+    "@graphql-codegen/cli": "5.0.2",
+    "@types/react": "18.2.66",
+    "@types/react-dom": "18.2.22",
+    "@typescript-eslint/eslint-plugin": "7.2.0",
+    "@typescript-eslint/parser": "7.2.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-refresh": "0.4.6",
+    "typescript": "5.4.5",
+    "vite": "5.2.0"
   }
 }

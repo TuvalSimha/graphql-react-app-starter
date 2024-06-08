@@ -1,5 +1,5 @@
 import { useQuery } from "urql";
-import { graphql } from "../gql/gql";
+import { graphql } from "../__generated__/gql";
 
 // This is the GraphQL query that we will send to the server
 const allPokemonsQueryDocument = graphql(/* GraphQL */ `

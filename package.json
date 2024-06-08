@@ -1,6 +1,6 @@
 {
   "name": "create-graphql-react-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A starter project for a fullstack GraphQL app with React, GraphQL Codegen, GraphQL Yoga and Vite.",
   "main": "index.js",
   "workspaces": [

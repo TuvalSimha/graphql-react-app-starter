@@ -1,6 +1,14 @@
 # GraphQL React App Starter
 
+## Quick Start
+
+```
+npx create-graphql-react-app my-app
+cd my-app
+```
+
 ## Video Demo
+
 https://github.com/TuvalSimha/graphql-react-app-starter/assets/37614975/1b90da5d-d4e8-445f-a05f-09750e113e90
 
 ## Overview

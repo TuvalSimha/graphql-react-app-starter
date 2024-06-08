@@ -1,5 +1,5 @@
 {
-  "name": "graphql-react-app-starter",
+  "name": "create-graphql-react-app",
   "version": "1.0.0",
   "description": "A starter project for a fullstack GraphQL app with React, GraphQL Codegen, GraphQL Yoga and Vite.",
   "main": "index.js",
@@ -9,6 +9,9 @@
   ],
   "scripts": {
     "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "bin": {
+    "create-graphql-react-app": "./index.js"
   },
   "type": "module",
   "keywords": [
